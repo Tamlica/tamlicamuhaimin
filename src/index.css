@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-journal-paper dark:bg-darkjournal-paper text-journal-ink dark:text-darkjournal-ink font-sans;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.chapter {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--accent-color);
+  transform-origin: 0%;
+  z-index: 50;
+}
+
+.journal-page {
+  @apply bg-white dark:bg-gray-800 rounded-md shadow-md p-6 md:p-8;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.journal-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://images.pexels.com/photos/4097160/pexels-photo-4097160.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&dpr=1');
+  background-size: cover;
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: -1;
+  @apply rounded-md;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-mono;
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-3 rounded-md font-medium transition duration-300 inline-flex items-center justify-center;
+  }
+
+  .btn-primary {
+    @apply bg-journal-accent text-white dark:bg-darkjournal-accent hover:bg-journal-accent/90 dark:hover:bg-darkjournal-accent/90;
+  }
+
+  .btn-secondary {
+    @apply bg-journal-paper text-journal-ink border border-journal-ink/20 hover:bg-journal-paper/90 dark:bg-darkjournal-paper dark:text-darkjournal-ink dark:border-darkjournal-ink/20 dark:hover:bg-darkjournal-paper/90;
+  }
+
+  .tech-badge {
+    @apply px-3 py-1 m-1 rounded-full bg-journal-paper dark:bg-darkjournal-paper text-sm border border-journal-ink/20 dark:border-darkjournal-ink/20 inline-flex items-center;
+  }
+
+  .chapter-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-journal-accent dark:text-darkjournal-accent font-mono;
+  }
+
+  .chapter-subtitle {
+    @apply text-xl md:text-2xl font-medium mb-8 text-journal-ink/80 dark:text-darkjournal-ink/80;
+  }
+}
