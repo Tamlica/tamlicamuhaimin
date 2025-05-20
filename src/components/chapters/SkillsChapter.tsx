@@ -13,17 +13,17 @@ const skillTiers: SkillTier[] = [
   {
     icon: '🔹',
     name: 'Fluent (Use Daily / Deep Understanding)',
-    skills: ['JavaScript', 'TypeScript', 'React', 'Node.js', 'HTML & CSS', 'Git', 'REST APIs']
+    skills: ['Python','Django', 'JavaScript', 'TypeScript', 'React','VueJs', 'Node.js', 'HTML & CSS', 'Git', 'REST APIs']
   },
   {
     icon: '🔸',
     name: 'Proficient (Used in Multiple Projects)',
-    skills: ['Express', 'PostgreSQL', 'MongoDB', 'Docker', 'UI/UX Design', 'Figma']
+    skills: ['FastAPI','Flask', 'Express', 'Machine Learning', 'PostgreSQL', 'MongoDB', 'Docker', 'UI/UX Design', 'Figma']
   },
   {
     icon: '🔻',
     name: 'Exploring / Experimental',
-    skills: ['AWS', 'WebAssembly', 'GraphQL', 'Rust', 'Machine Learning']
+    skills: ['React Native', 'AWS', 'WebAssembly', 'GraphQL', 'Rust']
   }
 ];
 

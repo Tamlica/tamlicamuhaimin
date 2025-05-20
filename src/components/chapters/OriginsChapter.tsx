@@ -43,7 +43,7 @@ const OriginsChapter: React.FC = () => {
         className="space-y-6"
       >
         <motion.p variants={itemVariants} className="text-lg leading-relaxed">
-          My journey into software development began in 2015, when I first discovered the joy of bringing ideas to life through code. What started as curiosity quickly evolved into passion as I realized the potential to create solutions that could impact people's lives.
+          My journey into software development began in 2019, when I first discovered the joy of bringing ideas to life through code. What started as curiosity quickly evolved into passion as I realized the potential to create solutions that could impact people's lives.
         </motion.p>
 
         <motion.p variants={itemVariants} className="text-lg leading-relaxed">

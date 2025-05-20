@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Mail, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Github, Linkedin, Instagram } from 'lucide-react';
 
 const ContactChapter: React.FC = () => {
   const [ref, inView] = useInView({
@@ -29,10 +29,10 @@ const ContactChapter: React.FC = () => {
   };
 
   const socialLinks = [
-    { name: 'Email', icon: <Mail className="w-5 h-5" />, href: 'mailto:hello@tamlica.dev' },
+    { name: 'Email', icon: <Mail className="w-5 h-5" />, href: 'mailto:tamlicamuhaimin@outlook.com' },
     { name: 'GitHub', icon: <Github className="w-5 h-5" />, href: 'https://github.com/tamlica' },
-    { name: 'LinkedIn', icon: <Linkedin className="w-5 h-5" />, href: 'https://linkedin.com/in/tamlica' },
-    { name: 'Twitter', icon: <Twitter className="w-5 h-5" />, href: 'https://twitter.com/tamlica' }
+    { name: 'LinkedIn', icon: <Linkedin className="w-5 h-5" />, href: 'https://linkedin.com/in/tamlicamuhaimin' },
+    { name: 'Instagram', icon: <Instagram className="w-5 h-5" />, href: 'https://instagram.com/tamlicamuhaimin' }
   ];
 
   return (
