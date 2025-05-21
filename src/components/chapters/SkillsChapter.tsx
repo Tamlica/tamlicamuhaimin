@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Code } from 'lucide-react';
+import { Code, ChevronDown } from 'lucide-react';
 
 interface SkillTier {
   icon: string;
@@ -50,6 +50,10 @@ const SkillsChapter: React.FC = () => {
       x: 0,
       transition: { duration: 0.5 }
     }
+  };
+
+  const scrollToNext = () => {
+    document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -101,6 +105,20 @@ const SkillsChapter: React.FC = () => {
           <span className="mr-2">⚙️</span>
           I value clarity over hype — these reflect what I've shipped with, not just what I've touched.
         </motion.p>
+
+        <div className='flex flex-col items-center justify-center'>
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            variants={itemVariants}
+            className="btn btn-primary mx-auto"
+            onClick={scrollToNext}
+          >
+            Next
+            <ChevronDown className="ml-2 w-5 h-5" />
+          </motion.button>
+        </div>
+    
       </motion.div>
     </div>
   );

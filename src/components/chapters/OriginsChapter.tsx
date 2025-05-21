@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Book } from 'lucide-react';
+import { Book, ChevronDown } from 'lucide-react';
 
 const OriginsChapter: React.FC = () => {
   const [ref, inView] = useInView({
@@ -26,6 +26,10 @@ const OriginsChapter: React.FC = () => {
       y: 0,
       transition: { duration: 0.5 }
     }
+  };
+
+  const scrollToNext = () => {
+    document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -63,6 +67,19 @@ const OriginsChapter: React.FC = () => {
         <motion.p variants={itemVariants} className="text-lg leading-relaxed">
           The journey hasn't always been easy. I've faced challenging bugs, confusing documentation, and seemingly impossible deadlines. But with each obstacle overcome, my skills have grown stronger and my passion for development has only deepened.
         </motion.p>
+
+        <div className='flex flex-col items-center justify-center'>
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            variants={itemVariants}
+            className="btn btn-primary mx-auto"
+            onClick={scrollToNext}
+          >
+            Next
+            <ChevronDown className="ml-2 w-5 h-5" />
+          </motion.button>
+        </div>
       </motion.div>
     </div>
   );

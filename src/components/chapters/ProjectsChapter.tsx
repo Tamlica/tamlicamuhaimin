@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Code, ExternalLink, Github } from 'lucide-react';
+import { Code, ChevronDown } from 'lucide-react';
 import ProjectCard from '../ui/ProjectCard';
 import { projects } from '../../data/projects';
 
@@ -19,6 +19,19 @@ const ProjectsChapter: React.FC = () => {
         staggerChildren: 0.3,
       }
     }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, x: -20 },
+    visible: { 
+      opacity: 1, 
+      x: 0,
+      transition: { duration: 0.5 }
+    }
+  };
+
+  const scrollToNext = () => {
+    document.getElementById('experiments')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -46,6 +59,20 @@ const ProjectsChapter: React.FC = () => {
             isReversed={index % 2 !== 0}
           />
         ))}
+
+        <div className='flex flex-col items-center justify-center'>
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            variants={itemVariants}
+            className="btn btn-primary mx-auto"
+            onClick={scrollToNext}
+          >
+            Next
+            <ChevronDown className="ml-2 w-5 h-5" />
+          </motion.button>
+        </div>
+
       </motion.div>
     </div>
   );
