@@ -3,30 +3,37 @@ import { Experiment } from '../types';
 export const experiments: Experiment[] = [
   {
     id: 1,
-    title: 'AI Image Generator',
-    description: 'An experimental web app that uses AI to generate unique images based on text prompts. Built with React and integrated with OpenAI API.',
-    technologies: ['React', 'OpenAI API', 'Canvas API'],
-    link: 'https://ai-image-generator.example.com'
+    title: 'Bill Splitter',
+    description: 'An online bill splitter that calculates based on the meals for a group of friends.',
+    technologies: ['Javascript', 'React'],
+    link: 'https://maksi-splitter.netlify.app/'
   },
   {
     id: 2,
-    title: 'Voice-Controlled Music Player',
-    description: 'A music player that responds to voice commands for a hands-free listening experience, using browser speech recognition API.',
-    technologies: ['JavaScript', 'Web Speech API', 'Spotify API'],
-    link: 'https://voice-music-player.example.com'
+    title: 'NeoShopper - Shopping List App',
+    description: 'A simple shopping list mobile apps with a Neo Brutalism UI. (Open the link with mobile device to directly download it from Expo)',
+    technologies: ['JavaScript', 'React Native', 'Expo', 'Neo Brutalism'],
+    link: 'https://expo.dev/accounts/tamlica/projects/neo-shopper/builds/df5fd29a-d779-4ad7-a044-8474c8e58926'
   },
   {
     id: 3,
-    title: '3D Portfolio Visualizer',
-    description: 'A three-dimensional representation of development skills and projects, allowing users to explore through an interactive 3D space.',
-    technologies: ['Three.js', 'WebGL', 'GSAP'],
-    link: 'https://3d-portfolio.example.com'
+    title: 'Steam Sales Discord Bot',
+    description: 'A steam sales discord bot that sends daily information about steam sales.',
+    technologies: ['JavaScript', 'NodeJs', 'Discord API'],
+    link: 'https://github.com/Tamlica/Steam-Fortnite-Shop-Discord-Bot'
   },
   {
     id: 4,
-    title: 'Coding Challenge Solver',
-    description: 'An AI-powered tool that helps developers solve coding challenges by suggesting optimized solutions and explaining the approach.',
-    technologies: ['TypeScript', 'NLP', 'Algorithm Visualization'],
-    link: 'https://code-solver.example.com'
+    title: 'Expense Tracker',
+    description: 'An expense tracker app that allows users to track their expenses and categorize them for better organization.',
+    technologies: ['JavaScript', 'React Native', 'Expo'],
+    link: 'https://expense-tracker.example.com'
+  },
+  {
+    id: 5,
+    title: 'TaskFlow - Task Management App',
+    description: 'A modern task management application with a focus on clean design and intuitive UX, featuring GitHub and Google Sign In integration',
+    technologies: ['TypeScript', 'Javascript', 'React', 'Tailwind CSS'],
+    link: 'https://github.com/Tamlica/sass-productivity'
   }
 ];

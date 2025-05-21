@@ -37,7 +37,7 @@ const ExperimentsChapter: React.FC = () => {
     <div className="journal-page">
       <div className="flex items-center gap-4 mb-6">
         <Brain className="w-10 h-10 mb-6 text-journal-accent dark:text-darkjournal-accent" />
-        <h2 className="chapter-title">Chapter 4: AI + Experiments</h2>
+        <h2 className="chapter-title">Chapter 4: Experiments</h2>
       </div>
 
       <p className="text-lg mb-10">
