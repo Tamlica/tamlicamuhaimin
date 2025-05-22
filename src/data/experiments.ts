@@ -5,13 +5,13 @@ export const experiments: Experiment[] = [
     id: 1,
     title: 'SplitWise - Bill Splitter',
     description: 'An online bill splitter that calculates based on meals, discounts, and fees for a group of friends.',
-    technologies: ['Javascript','Typescript', 'React'],
+    technologies: ['JavaScript','TypeScript', 'React'],
     link: 'https://wise-splitting.netlify.app/'
   },
   {
     id: 2,
     title: 'NeoShopper - Shopping List App',
-    description: 'A simple shopping list mobile apps with a Neo Brutalism UI. (Open the link with mobile device to directly download it from Expo)',
+    description: 'A simple shopping list mobile apps allows users to customable categories and quick add items, with a Neo Brutalism UI. (Open the link with mobile device to directly download it from Expo)',
     technologies: ['JavaScript', 'React Native', 'Expo', 'Neo Brutalism'],
     link: 'https://expo.dev/accounts/tamlica/projects/neo-shopper/builds/df5fd29a-d779-4ad7-a044-8474c8e58926'
   },
