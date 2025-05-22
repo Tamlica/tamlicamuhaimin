@@ -3,18 +3,16 @@ import { Project } from '../types';
 export const projects: Project[] = [
   {
     id: 1,
-    title: 'E-Commerce Dashboard',
-    description: 'A comprehensive dashboard for online store management with real-time analytics, inventory tracking, and customer insights.',
-    image: 'https://images.pexels.com/photos/7821486/pexels-photo-7821486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    technologies: ['React', 'TypeScript', 'Node.js', 'MongoDB', 'Chart.js'],
+    title: 'Foreign Exchange Report System',
+    description: 'A real-time report system for foreign exchange transactions.The frontend application is integrated with the authentication database, while the transaction database is accessed via API calls and synchronize in real-time with BI.',
+    image: 'public/sismontavar.png',
+    technologies: ['Python', 'Django', 'PostgreSQL', 'RestAPI', 'Bootstrap', 'JavaScript'],
     highlights: [
-      'Real-time sales analytics with customizable date ranges',
-      'Inventory management system with low-stock alerts',
-      'Customer behavior insights and segmentation',
-      'Responsive design works across all devices'
+      'User authentication and authorization',
+      'CRUD operations for transaction data',
+      'Real-time data synchronization',
+      'Admin and operator roles'
     ],
-    demoUrl: 'https://ecommerce-dashboard.example.com',
-    githubUrl: 'https://github.com/tamlica/ecommerce-dashboard'
   },
   {
     id: 2,
