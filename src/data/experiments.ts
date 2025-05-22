@@ -3,10 +3,10 @@ import { Experiment } from '../types';
 export const experiments: Experiment[] = [
   {
     id: 1,
-    title: 'Bill Splitter',
-    description: 'An online bill splitter that calculates based on the meals for a group of friends.',
-    technologies: ['Javascript', 'React'],
-    link: 'https://maksi-splitter.netlify.app/'
+    title: 'SplitWise - Bill Splitter',
+    description: 'An online bill splitter that calculates based on meals, discounts, and fees for a group of friends.',
+    technologies: ['Javascript','Typescript', 'React'],
+    link: 'https://wise-splitting.netlify.app/'
   },
   {
     id: 2,
