@@ -5,7 +5,7 @@ export const projects: Project[] = [
     id: 1,
     title: 'Foreign Exchange Report System',
     description: 'A real-time report system for foreign exchange transactions.The frontend application is integrated with the authentication database, while the transaction database is accessed via API calls and synchronize in real-time with BI.',
-    image: 'public/sismontavar.png',
+    image: '/sismontavar.png',
     technologies: ['Python', 'Django', 'PostgreSQL', 'RestAPI', 'Bootstrap', 'JavaScript'],
     highlights: [
       'User authentication and authorization',
