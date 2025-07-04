@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, useScroll } from 'framer-motion';
-import { Sun, Moon } from 'lucide-react';
+import { Sun, Moon, Newspaper } from 'lucide-react';
 import CoverPage from './components/CoverPage';
 import Chapter from './components/Chapter';
 import OriginsChapter from './components/chapters/OriginsChapter';
@@ -41,17 +41,31 @@ function App() {
         style={{ scaleX: scrollYProgress }}
       />
       
-      <button
-        onClick={toggleDarkMode}
-        className="fixed top-4 right-4 z-50 p-2 rounded-full bg-journal-paper dark:bg-darkjournal-paper shadow-md"
-        aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
-      >
-        {darkMode ? (
-          <Sun className="w-6 h-6 text-darkjournal-highlight" />
-        ) : (
-          <Moon className="w-6 h-6 text-journal-accent" />
-        )}
-      </button>
+      <div className="fixed top-4 right-4 z-50 flex gap-2">
+        <button
+          onClick={() => window.open('https://resume.tamlicamuhaim.in/', '_blank')}
+          className="p-2 rounded-full bg-journal-paper dark:bg-darkjournal-paper shadow-md"
+          aria-label="View Resume"
+        >
+          {darkMode ? (
+            <Newspaper className="w-6 h-6 text-journal-paper" />
+          ) : (
+            <Newspaper className="w-6 h-6 text-journal-ink" />
+          )}
+        </button>
+
+        <button
+          onClick={toggleDarkMode}
+          className="p-2 rounded-full bg-journal-paper dark:bg-darkjournal-paper shadow-md"
+          aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
+        >
+          {darkMode ? (
+            <Sun className="w-6 h-6 text-darkjournal-highlight" />
+          ) : (
+            <Moon className="w-6 h-6 text-journal-accent" />
+          )}
+        </button>
+      </div>
 
       <ScrollToTop />
       

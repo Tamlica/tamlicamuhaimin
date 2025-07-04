@@ -26,7 +26,7 @@ export const projects: Project[] = [
       'Custom notifications for severe weather alerts',
       'Available for both iOS and Android platforms'
     ],
-    demoUrl: 'https://weather-app.example.com',
+    // demoUrl: 'https://weather-app.example.com',
     githubUrl: 'https://github.com/tamlica/weather-app'
   },
   {
@@ -41,7 +41,7 @@ export const projects: Project[] = [
       'Deadline tracking with calendar integration',
       'File attachment and sharing capabilities'
     ],
-    demoUrl: 'https://task-manager.example.com',
-    githubUrl: 'https://github.com/tamlica/task-manager'
+    // demoUrl: 'https://task-manager.example.com',
+    githubUrl: 'https://github.com/Tamlica/sass-productivity'
   }
 ];

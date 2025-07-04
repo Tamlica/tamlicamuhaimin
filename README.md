@@ -1,3 +1,3 @@
-# Tamlica's Portfolio project to be deploy on Cloudflare Pages
+# Tamlica's Portfolio project
 
-[Link to Cloudflare Pages](http://tamlicamuhaimin.pages.dev/)
+[Website](http://tamlicamuhaim.in/)

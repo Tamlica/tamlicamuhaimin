@@ -24,13 +24,6 @@ export const experiments: Experiment[] = [
   },
   {
     id: 4,
-    title: 'Expense Tracker',
-    description: 'An expense tracker app that allows users to track their expenses and categorize them for better organization.',
-    technologies: ['JavaScript', 'React Native', 'Expo'],
-    link: 'https://expense-tracker.example.com'
-  },
-  {
-    id: 5,
     title: 'TaskFlow - Task Management App',
     description: 'A modern task management application with a focus on clean design and intuitive UX, featuring GitHub and Google Sign In integration',
     technologies: ['TypeScript', 'Javascript', 'React', 'Tailwind CSS'],
