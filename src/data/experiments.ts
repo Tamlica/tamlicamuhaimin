@@ -17,16 +17,16 @@ export const experiments: Experiment[] = [
   },
   {
     id: 3,
-    title: 'Steam Sales Discord Bot',
+    title: 'chicak-bot - Steam Sales Discord Bot',
     description: 'A steam sales discord bot that sends daily information about steam sales.',
     technologies: ['JavaScript', 'NodeJs', 'Discord API'],
     link: 'https://github.com/Tamlica/Steam-Fortnite-Shop-Discord-Bot'
   },
   {
     id: 4,
-    title: 'TaskFlow - Task Management App',
-    description: 'A modern task management application with a focus on clean design and intuitive UX, featuring GitHub and Google Sign In integration',
-    technologies: ['TypeScript', 'Javascript', 'React', 'Tailwind CSS'],
-    link: 'https://github.com/Tamlica/sass-productivity'
+    title: 'Kindled - Offline First Journal App',
+    description: 'An offline-first journal app that allows users to write and organize their thoughts without an internet connection. The app backups data to google drive and syncs across devices when online.',
+    technologies: ['JavaScript', 'React Native', 'Expo'],
+    link: 'https://github.com/Tamlica/kindled'
   }
 ];

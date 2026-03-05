@@ -97,7 +97,7 @@ const ContactChapter: React.FC = () => {
 
         <motion.div variants={itemVariants} className="pt-8 border-t border-gray-200 dark:border-gray-700 text-center">
           <p className="text-journal-ink/60 dark:text-darkjournal-ink/60">
-            © {new Date().getFullYear()} Tamlica • Developer Journal
+            ©{new Date().getFullYear()} Tamlica Muhaimin • Developer Journal
           </p>
           <p className="text-sm text-journal-ink/60 dark:text-darkjournal-ink/60 mt-2">
             Built with React, TypeScript & Tailwind CSS

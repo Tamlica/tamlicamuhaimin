@@ -16,32 +16,32 @@ export const projects: Project[] = [
   },
   {
     id: 2,
-    title: 'Weather Forecast App',
-    description: 'A beautifully designed weather application providing accurate forecasts, hourly predictions, and location-based weather alerts.',
-    image: 'https://images.pexels.com/photos/2448749/pexels-photo-2448749.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    technologies: ['React Native', 'TypeScript', 'OpenWeather API', 'Geolocation'],
+    title: 'RIKKESLA App',
+    description: 'RIKKESLA is a comprehensive medical checkup management system for tracking and managing medical examinations, participant data, and medical results.',
+    image: '/rikkesla.png',
+    technologies: ['Vite', 'TypeScript', 'React', 'Tailwind CSS', 'shadcn/ui', 'Tanstack Query', 'Node.js', 'Express.js', 'Drizzle ORM', 'PostgreSQL'],
     highlights: [
-      'Location-based weather forecasts with 7-day predictions',
-      'Interactive radar maps with precipitation tracking',
-      'Custom notifications for severe weather alerts',
-      'Available for both iOS and Android platforms'
+      'Comprehensive medical examination tracking and management',
+      'Participant data management with secure storage',
+      'Medical results documentation and history',
+      'Real-time data synchronization and reporting'
     ],
     // demoUrl: 'https://weather-app.example.com',
-    githubUrl: 'https://github.com/tamlica/weather-app'
+    // githubUrl: 'https://github.com/tamlica/rikkes'
   },
   {
     id: 3,
-    title: 'Task Management System',
-    description: 'A collaborative project management tool designed for teams to organize tasks, track progress, and meet deadlines efficiently.',
-    image: 'https://images.pexels.com/photos/3183156/pexels-photo-3183156.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    technologies: ['Vue.js', 'Firebase', 'Tailwind CSS', 'Drag-and-Drop API'],
+    title: 'Food Journal Map',
+    description: "A full-featured food journal application with a map-first interface. Track places you've visited, want to visit, or want to avoid, complete with photos, ratings, and pricing information—all visualized on an interactive map.",
+    image: '/food-journal-map.png',
+    technologies: ['Next.js', 'MapLibre GL JS', 'Mapcn', 'Tailwind CSS', 'shadcn/ui', 'zustand', 'TypeScript', 'Supabase'],
     highlights: [
-      'Kanban board with customizable columns and task statuses',
-      'Real-time collaboration with multi-user editing',
-      'Deadline tracking with calendar integration',
-      'File attachment and sharing capabilities'
+      'Map-first interface for visualizing food locations',
+      'Track visited places, want-to-visit, and places to avoid',
+      'Photo uploads with ratings and pricing information',
+      'Interactive map with place filtering and search'
     ],
-    // demoUrl: 'https://task-manager.example.com',
-    githubUrl: 'https://github.com/Tamlica/sass-productivity'
+    demoUrl: 'https://food-journal-mapcn.tamlicamuhaim.in/',
+    // githubUrl: 'https://github.com/Tamlica/sass-productivity'
   }
 ];
